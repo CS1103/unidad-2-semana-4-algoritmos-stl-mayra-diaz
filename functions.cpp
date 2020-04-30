@@ -69,3 +69,52 @@ string exercise_two(){
     return str;
 }
 
+
+//Exercise 3
+string exercise_three() {
+    return std::string();
+}
+
+
+//Exercise 4
+int measure(string dna, int length){
+    int w = 0;
+    for (int i = 0; i < length; i++) {
+        for (int j = i+1; j < length; j++) {
+            if (dna[i] > dna[j])
+                w++;
+        }
+    }
+    return w;
+}
+
+bool sort_specification(pair<string, int>a1, pair<string, int>a2){
+    return a1.second < a2.second;
+}
+
+string exercise_four() {
+    int N, length, number, aux2;
+    string str = "\n", w, aux1;
+    vector<pair<string, int>> dna;
+    cout << "Start entering the inputs:\n";
+
+    cin >> N;
+    for (int i = 0; i < N; ++i) {
+        dna.clear();
+        getline(cin, w);
+        cin >> length >> number;
+        for (int j = 0; j < number; ++j) {
+            cin >> aux1;
+            aux2 = measure(aux1, length);
+            dna.emplace_back(aux1, aux2);
+        }
+        stable_sort(begin(dna), end(dna), sort_specification);
+
+        for (auto& dn: dna){
+            str += dn.first + "\n";
+        }
+        str += "\n\n";
+    }
+    return str;
+}
+

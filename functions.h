@@ -23,11 +23,11 @@ string exercise_one();
 //Exercise 2
 string exercise_two();
 
-
-//Exercise 2
-
 //Exercise 3
+string exercise_three();
 
 //Exercise 4
+string exercise_four();
+
 
 #endif //EXS4_FUNCTIONS_H
