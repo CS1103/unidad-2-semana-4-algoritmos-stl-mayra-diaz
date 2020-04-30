@@ -41,37 +41,25 @@ string exercise_one() {
 
 
 //Exercise 2
-vector<pair<int, vector<int>>> enter_test_cases(){
+string exercise_two(){
     int N;
     cout << "Start entering the inputs:\n";
     cin >> N;
+
     vector<pair<int, vector<int>>> cases(N);
-    string order, number;
-
-    for (int i = 0; i < N; i++) {
-        cin >> cases[i].first >> order;
-        order += " ";
-        for (int j = 0; order[j+1] != '\0'; j++) {
-            number += order[j];
-            if (order[j+1] == ' ') {
-                cases[i].second.push_back(stoi(number));
-                number = "";
-            }
-        }
-    }
-    return cases;
-}
-
-string exercise_two() {
-    auto cases = enter_test_cases();
-    int swaps;
     string str;
-    for(auto& cass: cases){
+    int swaps, aux;
+    for (int i = 0; i < N; i++) {
+        cin >> cases[i].first;
+        for (int j = 0; j < cases[i].first; j++) {
+                cin >> aux;
+                cases[i].second.push_back(aux);
+            }
         swaps = 0;
-        for (int i = 0; i < cass.first-1; i++) {
-            for (int j = 0; j < cass.first-i-1; ++j) {
-                if (cass.second[j] > cass.second[j+1]){
-                    swap(cass.second[j], cass.second[j+1]);
+        for (int k = 0; k < cases[i].first-1; k++) {
+            for (int j = 0; j < cases[i].first - k - 1; ++j) {
+                if (cases[i].second[j] > cases[i].second[j+1]){
+                    swap(cases[i].second[j], cases[i].second[j+1]);
                     swaps++;
                 }
             }
@@ -80,3 +68,4 @@ string exercise_two() {
     }
     return str;
 }
+

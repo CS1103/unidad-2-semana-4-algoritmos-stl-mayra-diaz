@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mayra/POO-II-Git-Hub/unidad-2-semana-4-algoritmos-stl-mayra-diaz/functions.cpp
+functions.h
+/home/mayra/POO-II-Git-Hub/unidad-2-semana-4-algoritmos-stl-mayra-diaz/functions.h
+
+/home/mayra/POO-II-Git-Hub/unidad-2-semana-4-algoritmos-stl-mayra-diaz/functions.h
+iostream
+-
+string
+-
+array
+-
+stack
+-
+queue
+-
+vector
+-
+algorithm
+-
+
