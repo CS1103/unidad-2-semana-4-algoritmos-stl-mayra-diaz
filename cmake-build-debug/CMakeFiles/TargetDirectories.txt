@@ -1,0 +1,3 @@
+/home/mayra/POO-II-Git-Hub/unidad-2-semana-4-algoritmos-stl-mayra-diaz/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mayra/POO-II-Git-Hub/unidad-2-semana-4-algoritmos-stl-mayra-diaz/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mayra/POO-II-Git-Hub/unidad-2-semana-4-algoritmos-stl-mayra-diaz/cmake-build-debug/CMakeFiles/unidad_2_semana_4_algoritmos_stl_mayra_diaz.dir
